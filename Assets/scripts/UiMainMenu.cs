@@ -45,7 +45,7 @@ public class UiMainMenu : MonoBehaviour
         player1SpeedSlider.value = player1.GetMovementSpeed();
         player2SpeedSlider.value = player2.GetMovementSpeed();
         
-        mainMenuPanel.SetActive(false);  // Inicialmente, el menú principal está oculto
+        mainMenuPanel.SetActive(true);  // Inicialmente, el menú principal está oculto
         settingsPanel.SetActive(false);  // El menú de configuración también está oculto
         creditsPanel.SetActive(false);  // El menú de créditos también está oculto
     }
@@ -109,12 +109,12 @@ public class UiMainMenu : MonoBehaviour
     private void OnPlayer1SpeedSliderChanged(float value)
     {
         player1.SetMovementSpeed(value);
-        player1SpeedText.text = $"Player 1 Speed: {value:F2}";
+        player1SpeedText.text = $"{value:F2}";
     }
 
     private void OnPlayer2SpeedSliderChanged(float value)
     {
         player2.SetMovementSpeed(value);
-        player2SpeedText.text = $"Player 2 Speed: {value:F2}";
+        player2SpeedText.text = $"{value:F2}";
     }
 }
