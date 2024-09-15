@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class UiMainMenu : MonoBehaviour
 {
+    [Header("Panels")]
     [SerializeField] private Button playButton;
     [SerializeField] private Button exitButton;
     [SerializeField] private Button settingsButton;  // Botón para ingresar al menú de configuración
@@ -12,10 +13,12 @@ public class UiMainMenu : MonoBehaviour
     [SerializeField] private Button backButtonSettings;  // Botón para regresar del menú de configuración
     [SerializeField] private Button backButtonCredits;  // Botón para regresar del menú de créditos
 
+    [Header("Main Menu")]
     [SerializeField] private GameObject mainMenuPanel;  // Panel del menú principal
     [SerializeField] private GameObject settingsPanel;  // Panel del menú de configuración
     [SerializeField] private GameObject creditsPanel;  // Panel del menú de créditos
 
+    [Header("Settings")]
     [SerializeField] private Slider player1SpeedSlider;
     [SerializeField] private Text player1SpeedText;
     [SerializeField] private Slider player2SpeedSlider;
